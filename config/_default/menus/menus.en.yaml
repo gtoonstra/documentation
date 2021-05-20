@@ -5768,23 +5768,6 @@ api:
         - CreateWebhooksIntegrationCustomVariable
       unstable: []
       order: 5
-  - name: Cloud Workload Security
-    url: /api/latest/cloud-workload-security/
-    identifier: cloud-workload-security
-    generated: true
-  - name: Get the latest Cloud Workload Security policy
-    url: '#get-the-latest-cloud-workload-security-policy'
-    identifier: get-the-latest-cloud-workload-security-policy
-    parent: cloud-workload-security
-    generated: true
-    params:
-      versions:
-        - v2
-      operationids:
-        - DownloadCloudWorkloadPolicyFile
-      unstable:
-        - v2
-      order: 0
   - name: Incident Services
     url: /api/latest/incident-services/
     identifier: incident-services
@@ -6508,6 +6491,19 @@ api:
       unstable:
         - v2
       order: 7
+  - name: Get the latest Runtime Security policy
+    url: '#get-the-latest-runtime-security-policy'
+    identifier: get-the-latest-runtime-security-policy
+    parent: security-monitoring
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - DowloadRuntimePolicyFile
+      unstable:
+        - v2
+      order: 0
   - name: Update an existing rule
     url: '#update-an-existing-rule'
     identifier: update-an-existing-rule
@@ -6568,63 +6564,3 @@ api:
         - ListSecurityMonitoringRules
       unstable: []
       order: 1
-  - name: Update a security filter
-    url: '#update-a-security-filter'
-    identifier: update-a-security-filter
-    parent: security-monitoring
-    generated: true
-    params:
-      versions:
-        - v2
-      operationids:
-        - UpdateSecurityFilter
-      unstable: []
-      order: 0
-  - name: Get a security filter
-    url: '#get-a-security-filter'
-    identifier: get-a-security-filter
-    parent: security-monitoring
-    generated: true
-    params:
-      versions:
-        - v2
-      operationids:
-        - GetSecurityFilter
-      unstable: []
-      order: 0
-  - name: Delete a security filter
-    url: '#delete-a-security-filter'
-    identifier: delete-a-security-filter
-    parent: security-monitoring
-    generated: true
-    params:
-      versions:
-        - v2
-      operationids:
-        - DeleteSecurityFilter
-      unstable: []
-      order: 0
-  - name: Create a security filter
-    url: '#create-a-security-filter'
-    identifier: create-a-security-filter
-    parent: security-monitoring
-    generated: true
-    params:
-      versions:
-        - v2
-      operationids:
-        - CreateSecurityFilter
-      unstable: []
-      order: 0
-  - name: Get all security filters
-    url: '#get-all-security-filters'
-    identifier: get-all-security-filters
-    parent: security-monitoring
-    generated: true
-    params:
-      versions:
-        - v2
-      operationids:
-        - ListSecurityFilters
-      unstable: []
-      order: 0
